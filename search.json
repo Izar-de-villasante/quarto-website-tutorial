@@ -179,7 +179,21 @@
     "href": "index.html",
     "title": "My Projects website",
     "section": "",
-    "text": "It’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout."
+    "text": "# install.packages(\"rmarkdown\")\n# install.packages(\"jsonlite\")\noptions(Ncpus = max(1,parallel::detectCores()-abs(max(parallel::detectCores()/10,2))))"
+  },
+  {
+    "objectID": "index.html#hello-world",
+    "href": "index.html#hello-world",
+    "title": "My Projects website",
+    "section": "Hello world",
+    "text": "Hello world\nI am a bioinformatics technician currently working at (IJC) Josep Carreras Leukaemia Research Institute in Badalona.\n\nlibrary(leaflet)\n\n\nm <- leaflet() %>%\n  addTiles() %>%  # Add default OpenStreetMap map tiles\n  addMarkers(lng=2.239724437547112, lat=41.48540089172277, popup=\"IJC BIT Headquarters\")%>%\n  addRectangles(\n    lng1 = 2.2404, lat1 = 41.4860,\n    lng2 = 2.2392, lat2 = 41.4850,\n    fillColor = \"transparent\"\n    )\nm  # Print the map\n\n\n\n\n\nYou can check out our units` webpage here: And Bioinformatics Unit (BIT) where I currently work here If you are interested on my publications you can check them here:\nOr follow me on my youtube channel with tutorials. Youtube channel You cacn also clone and modify this webpage if you want by branching the github repo."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "My Projects website",
+    "section": "Welcome",
+    "text": "Welcome\nIt’s possible to create beautiful documentation to share online with Quarto that auto-updates with GitHub. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.\nCreating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout."
   },
   {
     "objectID": "index.html#what-is-quarto",
@@ -208,6 +222,41 @@
     "title": "My Projects website",
     "section": "About",
     "text": "About\nOpenscapes is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.\nWe’re developing this tutorial to help folks with different levels of technical skills use Quarto for documentation and tutorial building. This tutorial was originally created for several different audiences: NASA-Openscapes researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page."
+  },
+  {
+    "objectID": "Trainings/linux_intro.html",
+    "href": "Trainings/linux_intro.html",
+    "title": "Making sharable documents with Quarto",
+    "section": "",
+    "text": "“some stuff linux”"
+  },
+  {
+    "objectID": "Trainings/R_intro.html",
+    "href": "Trainings/R_intro.html",
+    "title": "Example data analysis",
+    "section": "",
+    "text": "Principal functions reading data into R\n\nread.table, read.csv (tabular data)\nreadLines (text file)\nload (read in saved workspaces)\nsource (for reading in R code files)\n\n\n\n\nread.table() is one of the most commonly used functions for reading data. The help file is definitely worth reading in its entirety.\nThe read.table() function has a few important arguments:\n\nfile, the name of a file, or a connection\nheader, logical indicating if the file has a header line\nsep, a string indicating how the columns are separated\ncolClasses, a character vector indicating the class of each column in the dataset\nnrows, the number of rows in the dataset. By default read.table() reads an entire file.\ncomment.char, a character string indicating the comment character. This defaults to “#”.\nskip, the number of lines to skip from the beginning\nstringsAsFactors, should character variables be coded as factors? This defaults to TRUE.\n\n\n\n\n\n\n\n\nTip\n\n\n\nReading larger datasets with R\nread.table() automatically estimates various parameters to store data. If you provide these this significantly speeds up the reading of large data sets.\n\nSet comment.char = \"\" if there are no commented lines in your file.\nUse the colClasses argument. Specifying this option instead of using the default can make ‘read.table’ run MUCH faster, often twice as fast. In order to use this option, you have to know the class of each column in your data frame. If all of the columns are “numeric”, for example, then you can just set colClasses = \"numeric\".\nSet nrows. This doesn’t make R run faster but it helps with memory usage. A mild overestimate is okay.\n\n\n\n\n\n\n\n# use default parameters, missing parameters are estimated\ndata <- read.table(file = \"data/my_data.txt\") \n\n# assign parameters\ndata <- read.table(file = \"data/my_data.txt\", \n                   comment.char = \"\", \n                   header = TRUE,\n                   colClasses = c(rep(\"numeric\",4), \"factor\")\n                   )"
+  },
+  {
+    "objectID": "Trainings/R_intro.html#data-qc-and-exploration",
+    "href": "Trainings/R_intro.html#data-qc-and-exploration",
+    "title": "Example data analysis",
+    "section": "2. Data QC and exploration",
+    "text": "2. Data QC and exploration\nOnce you have imported your data it is always a good idea to inspect your data object:\n\nhead() = displays the first parts of an object\nattributes() = lists the attributes of an object\nstr() = displays the internal structure of an R object or a diagnostic function\nRStudio viewer view()\n\nYou may need to adjust the way you import your data!\n\nNow you can start exploring your data using summary() plot(density()) boxplot()\n\n# rename the object\niris <- data\n\n# basic summary statistics\nsummary(iris)\n\n# density distribution\nplot(density(iris$Sepal.Length))\n\n# value distribution by group\nboxplot(iris$Sepal.Length ~ iris$Species, col = c(\"black\",\"red\",\"green\"))\n\n# pairwise value plots\npairs(iris, col = iris$Species)"
+  },
+  {
+    "objectID": "Trainings/R_intro.html#data-analysis",
+    "href": "Trainings/R_intro.html#data-analysis",
+    "title": "Example data analysis",
+    "section": "3. Data analysis",
+    "text": "3. Data analysis\nLets find out how Sepal length and Petal length are related\n\n# examine the relationship between Sepal and Petal Length\nplot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species)\n\n# calculate Pearson correlation\ncor.test(iris$Sepal.Length, iris$Petal.Length)\n\n\n# FINAL PLOT\n \nplot(iris$Sepal.Length, iris$Petal.Length,            # x variable, y variable\n     col  = iris$Species,                             # colour by species\n     pch  = 16,                                       # type of point to use\n     xlab = \"Sepal Length\",                           # x axis label\n     ylab = \"Petal Length\",                           # y axis label\n     main = \"Flower characteristics in Iris\")         # plot title \n\n# legend with titles of iris$Species and colour 1:3, point type pch at coords (x,y)\nlegend(\"topleft\", legend = levels(iris$Species), col = c(1:3), pch =16)\n\n# text at coords (x,y) with label correlation test\ntext(x = 7.5, y = 2, labels = \"cor = 0.871\\np < 2.2e-16\")"
+  },
+  {
+    "objectID": "Trainings/R_intro.html#export-results",
+    "href": "Trainings/R_intro.html#export-results",
+    "title": "Example data analysis",
+    "section": "4. Export results",
+    "text": "4. Export results\nSaving images\n\nexport with RStudio through Plots >> save\nalternatively use jpeg(), png(), svg() or pdf()\n\n\n# open graphics device\npng(file = \"my_plot.png\", width = 480, height = 480)\n\n# plot\nplot(iris$Sepal.Length, iris$Petal.Length,            # x variable, y variable\n     col  = iris$Species,                             # colour by species\n     pch  = 16,                                       # type of point to use\n     xlab = \"Sepal Length\",                           # x axis label\n     ylab = \"Petal Length\",                           # y axis label\n     main = \"Flower characteristics in Iris\")         # plot title \n\n# legend with titles of iris$Species and colour 1:3, point type pch at coords (x,y)\nlegend(\"topleft\", legend = levels(iris$Species), col = c(1:3), pch =16)\n\n# text at coords (x,y) with label correlation test\ntext(x = 7.5, y = 2, labels = \"cor = 0.871\\np < 2.2e-16\")\n\n# close the device\ndev.off()\n\npng \n  2 \n\n\nFunctions for writing data to files\n\nwrite.table or write.csv (writing tabular data to text files, i.e. CSV, or connections)\nwriteLines(writing character data line-by-line to a file or connection)\nsave (saving an arbitrary number of R objects in binary format (possibly compressed) to a file)\n\n\n#| eval: false\n# write your results to a file\nwrite.table(iris,                       # dataframe\n            file = \"results.csv\",       # filename\n            sep  = \";\",                 # field seperator\n            col.names = TRUE,           # include header (default = TRUE)\n            row.names = FALSE,          # include row names (default = TRUE)\n            quote = FALSE)              # quote characters and factors\n\n# save your data object\nsaveRDS(iris,                           #  data object\n        file = \"iris.rds\")              #  file name\n\nFor more on basic R plots see R Base Graphics: An Idiots Guide"
   },
   {
     "objectID": "transition-from-rmarkdown.html",

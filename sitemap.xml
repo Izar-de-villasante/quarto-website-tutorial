@@ -2,34 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2022-10-31T15:19:03.819Z</lastmod>
+    <lastmod>2022-11-21T16:06:05.764Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-10-31T15:19:05.511Z</lastmod>
+    <lastmod>2022-11-21T16:06:07.520Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2022-10-31T15:19:06.027Z</lastmod>
+    <lastmod>2022-11-21T16:06:08.020Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-10-31T15:19:06.607Z</lastmod>
+    <lastmod>2022-11-21T16:06:08.668Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-10-31T15:19:07.099Z</lastmod>
+    <lastmod>2022-11-21T16:06:10.956Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/Trainings/linux_intro.html</loc>
+    <lastmod>2022-11-21T16:06:11.392Z</lastmod>
+  </url>
+  <url>
+    <loc>https://openscapes.github.io/quarto-website-tutorial/Trainings/R_intro.html</loc>
+    <lastmod>2022-11-21T16:06:16.244Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-10-31T15:19:07.695Z</lastmod>
+    <lastmod>2022-11-21T16:06:16.896Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2022-10-31T15:19:08.267Z</lastmod>
+    <lastmod>2022-11-21T16:06:17.528Z</lastmod>
   </url>
   <url>
     <loc>https://openscapes.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2022-10-31T15:19:08.699Z</lastmod>
+    <lastmod>2022-11-21T16:06:17.964Z</lastmod>
   </url>
 </urlset>
