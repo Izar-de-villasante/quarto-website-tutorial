@@ -2,10 +2,11 @@ project:
   type: website
   
 website: 
+  google-analytics: G-ML1E5YYLV4
   page-navigation: true
   title: "Making sharable documents with Quarto" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
+  site-url: "https://https://ijcbit.github.io/Trainings/" 
+  
   repo-actions: [edit, issue]
   
   page-footer:
@@ -23,9 +24,7 @@ website:
       - icon: github
         href: https://github.com/openscapes/quarto-website-tutorial
         text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+    
 
     style: "docked"
     search: true
