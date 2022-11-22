@@ -4,7 +4,7 @@ project:
 website: 
   google-analytics: G-ML1E5YYLV4
   page-navigation: true
-  title: "Making sharable documents with Quarto" 
+  title: "My projects website" 
   site-url: "https://https://ijcbit.github.io/Trainings/" 
   
   repo-actions: [edit, issue]

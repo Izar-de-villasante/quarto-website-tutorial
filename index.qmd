@@ -13,7 +13,7 @@ options(Ncpus = max(1,parallel::detectCores()-abs(max(parallel::detectCores()/10
 
 ## Hello world
 
-I am a bioinformatics technician currently working at [(IJC) Josep Carreras Leukaemia Research Institute]((https://www.carrerasresearch.org/es/)) in Badalona.
+I am a {{< var job.position >}} currently working at {{< var job.webpage >}} in {{< var job.city >}}.
 
 ```{r}
 
@@ -21,11 +21,16 @@ library(leaflet)
 
 
 m <- leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=2.239724437547112, lat=41.48540089172277, popup="IJC BIT Headquarters")%>%
+  addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png") %>%  # Add default OpenStreetMap map tiles
+
+  addAwesomeMarkers(lng=0.525847725869538, lat=40.81235294636711, popup="IISPV (PO&B)",clusterOptions = markerClusterOptions())%>%
+  addMarkers(lng=2.1058071325229624, lat=41.346492855726325, popup="IDIBELL (Brainvitge)",clusterOptions = markerClusterOptions())%>%
+  addMarkers(lng=2.239724437547112, lat=41.48540089172277, popup="ICO (UNAC)",clusterOptions = markerClusterOptions())%>%
+  addMarkers(lng=2.239724437547112, lat=41.48540089172277, popup="IJC (BIT)",clusterOptions = markerClusterOptions(showCoverageOnHover = T,spiderfyOnMaxZoom = T))%>%
+  
   addRectangles(
-    lng1 = 2.2404, lat1 = 41.4860,
-    lng2 = 2.2392, lat2 = 41.4850,
+    lng1 = 2.2434, lat1 = 41.4895,
+    lng2 = 2.2362, lat2 = 41.4815,
     fillColor = "transparent"
     )
 m  # Print the map
