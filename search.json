@@ -186,7 +186,7 @@
     "href": "index.html#hello-world",
     "title": "My Projects website",
     "section": "Hello world",
-    "text": "Hello world\nI am a bioinformatics technician currently working at (IJC) Josep Carreras Leukaemia Research Institute in Badalona.\n\nlibrary(leaflet)\n\n\nm <- leaflet() %>%\n  addTiles() %>%  # Add default OpenStreetMap map tiles\n  addMarkers(lng=2.239724437547112, lat=41.48540089172277, popup=\"IJC BIT Headquarters\")%>%\n  addRectangles(\n    lng1 = 2.2404, lat1 = 41.4860,\n    lng2 = 2.2392, lat2 = 41.4850,\n    fillColor = \"transparent\"\n    )\nm  # Print the map\n\n\n\n\n\nYou can check out our units` webpage here: And Bioinformatics Unit (BIT) where I currently work here If you are interested on my publications you can check them here:\nOr follow me on my youtube channel with tutorials. Youtube channel You cacn also clone and modify this webpage if you want by branching the github repo."
+    "text": "Hello world\nI am a bioinformatics technician currently working at (IJC) Josep Carreras Leukaemia Research Institute in Badalona.\n\nlibrary(leaflet)\n\n\nm <- leaflet() %>%\n  addTiles(urlTemplate = \"http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\") %>%  # Add default OpenStreetMap map tiles\n\n  addAwesomeMarkers(lng=0.525847725869538, lat=40.81235294636711, popup=\"IISPV (PO&B)\",clusterOptions = markerClusterOptions())%>%\n  addMarkers(lng=2.1058071325229624, lat=41.346492855726325, popup=\"IDIBELL (Brainvitge)\",clusterOptions = markerClusterOptions())%>%\n  addMarkers(lng=2.239724437547112, lat=41.48540089172277, popup=\"ICO (UNAC)\",clusterOptions = markerClusterOptions())%>%\n  addMarkers(lng=2.239724437547112, lat=41.48540089172277, popup=\"IJC (BIT)\",clusterOptions = markerClusterOptions(showCoverageOnHover = T,spiderfyOnMaxZoom = T))%>%\n  \n  addRectangles(\n    lng1 = 2.2434, lat1 = 41.4895,\n    lng2 = 2.2362, lat2 = 41.4815,\n    fillColor = \"transparent\"\n    )\nm  # Print the map\n\n\n\n\n\nYou can check out our units` webpage here: And Bioinformatics Unit (BIT) where I currently work here If you are interested on my publications you can check them here:\nOr follow me on my youtube channel with tutorials. Youtube channel You cacn also clone and modify this webpage if you want by branching the github repo."
   },
   {
     "objectID": "index.html#welcome",
@@ -226,7 +226,7 @@
   {
     "objectID": "Trainings/linux_intro.html",
     "href": "Trainings/linux_intro.html",
-    "title": "Making sharable documents with Quarto",
+    "title": "My projects website",
     "section": "",
     "text": "“some stuff linux”"
   },
