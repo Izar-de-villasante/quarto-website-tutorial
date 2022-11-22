@@ -1,1 +1,1 @@
-Sitemap: https://https://ijcbit.github.io/Trainings/sitemap.xml
+Sitemap: https://izar-de-villasante.github.io/quarto-website-tutorial/sitemap.xml
