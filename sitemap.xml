@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://https://izar-de-villasante.github.io/quarto-website-tutorial/Trainings/R_intro.html</loc>
-    <lastmod>2022-11-22T18:22:50.744Z</lastmod>
+    <loc>https://izar-de-villasante.github.io/quarto-website-tutorial/index.html</loc>
+    <lastmod>2022-11-23T10:52:04.817Z</lastmod>
   </url>
   <url>
-    <loc>https://https://izar-de-villasante.github.io/quarto-website-tutorial/Trainings/linux_intro.html</loc>
-    <lastmod>2022-11-22T18:22:52.140Z</lastmod>
+    <loc>https://izar-de-villasante.github.io/quarto-website-tutorial/learning-more.html</loc>
+    <lastmod>2022-11-23T10:52:05.937Z</lastmod>
   </url>
   <url>
-    <loc>https://https://izar-de-villasante.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2022-11-22T18:22:52.820Z</lastmod>
+    <loc>https://izar-de-villasante.github.io/quarto-website-tutorial/explore.html</loc>
+    <lastmod>2022-11-23T10:52:06.505Z</lastmod>
   </url>
   <url>
-    <loc>https://https://izar-de-villasante.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-11-22T18:22:53.476Z</lastmod>
+    <loc>https://izar-de-villasante.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
+    <lastmod>2022-11-23T10:52:06.917Z</lastmod>
   </url>
   <url>
-    <loc>https://https://izar-de-villasante.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-11-22T18:22:54.140Z</lastmod>
+    <loc>https://izar-de-villasante.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
+    <lastmod>2022-11-23T10:52:07.353Z</lastmod>
   </url>
   <url>
-    <loc>https://https://izar-de-villasante.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2022-11-22T18:22:54.652Z</lastmod>
+    <loc>https://izar-de-villasante.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
+    <lastmod>2022-11-23T10:52:09.177Z</lastmod>
   </url>
   <url>
-    <loc>https://https://izar-de-villasante.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2022-11-22T18:22:55.124Z</lastmod>
+    <loc>https://izar-de-villasante.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
+    <lastmod>2022-11-23T10:52:09.769Z</lastmod>
   </url>
   <url>
-    <loc>https://https://izar-de-villasante.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-11-22T18:22:55.672Z</lastmod>
+    <loc>https://izar-de-villasante.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
+    <lastmod>2022-11-23T10:52:10.285Z</lastmod>
   </url>
   <url>
-    <loc>https://https://izar-de-villasante.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-11-22T18:22:57.772Z</lastmod>
+    <loc>https://izar-de-villasante.github.io/quarto-website-tutorial/Trainings/R_intro.html</loc>
+    <lastmod>2022-11-23T10:52:14.133Z</lastmod>
   </url>
   <url>
-    <loc>https://https://izar-de-villasante.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2022-11-22T18:22:58.236Z</lastmod>
+    <loc>https://izar-de-villasante.github.io/quarto-website-tutorial/Trainings/linux_intro.html</loc>
+    <lastmod>2022-11-23T10:52:14.529Z</lastmod>
   </url>
 </urlset>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>My projects website - From RStudio</title>
+<title>My projects website - PTPN11 mutagenesis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -42,6 +105,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/molstar-v3.13.0/molstar.js"></script>
+<link href="../site_libs/quarto-contrib/molstar-v3.13.0/molstar.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/molstar-v3.13.0/app-container.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,7 +146,7 @@ gtag('config', 'G-ML1E5YYLV4', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">From RStudio</h1>
+      <h1 class="quarto-secondary-nav-title">PTPN11 mutagenesis</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -133,7 +199,7 @@ gtag('config', 'G-ML1E5YYLV4', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../quarto-workflows/rstudio.html" class="sidebar-item-text sidebar-link active">From RStudio</a>
+  <a href="../quarto-workflows/rstudio.html" class="sidebar-item-text sidebar-link active">PTPN11 mutagenesis</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -182,23 +248,10 @@ gtag('config', 'G-ML1E5YYLV4', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
+  <li><a href="#ptpn11-sequence-saturation-mutagenesis-sesam" id="toc-ptpn11-sequence-saturation-mutagenesis-sesam" class="nav-link active" data-scroll-target="#ptpn11-sequence-saturation-mutagenesis-sesam">PTPN11 <strong><em>Se</em></strong>quence <strong><em>Sa</em></strong>turation <strong><em>M</em></strong>utagenesis (SeSaM)</a>
   <ul class="collapse">
-  <li><a href="#rstudio-and-github" id="toc-rstudio-and-github" class="nav-link" data-scroll-target="#rstudio-and-github">RStudio and GitHub</a></li>
-  <li><a href="#clone-your-repo" id="toc-clone-your-repo" class="nav-link" data-scroll-target="#clone-your-repo">Clone your repo</a></li>
-  <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
-  <li><a href="#rstudio-orientation" id="toc-rstudio-orientation" class="nav-link" data-scroll-target="#rstudio-orientation">RStudio orientation</a></li>
-  <li><a href="#visual-editor" id="toc-visual-editor" class="nav-link" data-scroll-target="#visual-editor">Visual Editor</a></li>
+  <li><a href="#intro" id="toc-intro" class="nav-link" data-scroll-target="#intro">Intro</a></li>
   </ul></li>
-  <li><a href="#quarto-render" id="toc-quarto-render" class="nav-link" data-scroll-target="#quarto-render">Quarto render</a>
-  <ul class="collapse">
-  <li><a href="#make-a-small-change-and-render-it" id="toc-make-a-small-change-and-render-it" class="nav-link" data-scroll-target="#make-a-small-change-and-render-it">Make a small change and render it</a></li>
-  </ul></li>
-  <li><a href="#create-a-new-.rmd-page" id="toc-create-a-new-.rmd-page" class="nav-link" data-scroll-target="#create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</a></li>
-  <li><a href="#update-_quarto.yml" id="toc-update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">Update <code>_quarto.yml</code></a></li>
-  <li><a href="#authoring-tips" id="toc-authoring-tips" class="nav-link" data-scroll-target="#authoring-tips">Authoring tips</a></li>
-  <li><a href="#commit-and-push" id="toc-commit-and-push" class="nav-link" data-scroll-target="#commit-and-push">Commit and push!</a></li>
-  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
   </ul>
 </nav>
     </div>
@@ -207,7 +260,7 @@ gtag('config', 'G-ML1E5YYLV4', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">From RStudio</h1>
+<h1 class="title d-none d-lg-block">PTPN11 mutagenesis</h1>
 </div>
 
 
@@ -222,134 +275,62 @@ gtag('config', 'G-ML1E5YYLV4', { 'anonymize_ip': true});
 
 </header>
 
-<p>The RStudio software (called an IDE, integrated development environment) is an excellent way to edit files and interface with GitHub. Plus, as it is made by the same folks who make Quarto, it has many integrated features for streamlining your workflow with Quarto, including how it previews your edits and provides debugging support for yaml! <a href="https://quarto.org/docs/get-started/hello/rstudio.html">Quarto's RStudio tutorials</a> has great instructions on getting started with RStudio, including computations and authoring.</p>
-<p>Here is what you’ll need to do to set up and use RStudio with Quarto.</p>
-<section id="setup" class="level2">
-<h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<section id="rstudio-and-github" class="level3">
-<h3 class="anchored" data-anchor-id="rstudio-and-github">RStudio and GitHub</h3>
-<p>For a workflow with RStudio and GitHub on your local computer, you will need four things:</p>
-<ol type="1">
-<li>R</li>
-<li>RStudio</li>
-<li>Git</li>
-<li>GitHub</li>
-</ol>
-<p>Follow the <a href="https://ucsb-meds.github.io/meds-install-guide.html">UCSB MEDS Installation Guide</a> for detailed instructions on how to create accounts, download, install, and configure on Mac and Windows. This takes about 20 minutes. (For an even more detailed walk-through, see <a href="https://docs.google.com/document/d/1zx2upJJqFZe94O3BQSMI56Z76s3haLXC0otKSpcZaJQ/edit">Allison Horst’s ESM 206 Google Doc</a>).</p>
-</section>
-<section id="clone-your-repo" class="level3">
-<h3 class="anchored" data-anchor-id="clone-your-repo">Clone your repo</h3>
-<p>You’ll start by cloning your repository into RStudio.</p>
-<p>File &gt; New Project &gt; Version Control &gt; Git &gt; paste your repository name.</p>
-<p><a href="https://rstudio-conf-2020.github.io/r-for-excel/github.html#clone-your-repository-using-rstudio">R for Excel Users: Clone your repository using RStudio</a> has detailed instructions and screenshots of these steps.</p>
-</section>
-<section id="install-quarto" class="level3">
-<h3 class="anchored" data-anchor-id="install-quarto">Install Quarto</h3>
-<p>Next, you’ll install Quarto: <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>. After downloading, follow the installation wizard on your computer. When it is complete, you won’t see an application or any new software, but it is now available to RStudio (as well as all other applications on your computer, including the command line).</p>
-</section>
-<section id="rstudio-orientation" class="level3">
-<h3 class="anchored" data-anchor-id="rstudio-orientation">RStudio orientation</h3>
-<p>Now let’s take a moment to get oriented. This is an RStudio project, which is indicated in the top-right. The bottom right pane shows all the files in your project; everything we’ve cloned from GitHub. We can open any RStudio project by opening its <code>.Rproj</code> file, or from RStudio File &gt; Open Project ….</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/rstudio-orientation.png" class="img-fluid figure-img" alt="Screenshot of the RStudio IDE highlighting the project name and files pane"></p>
-<p></p><figcaption class="figure-caption">RStudio IDE highlighting the project name and files pane</figcaption><p></p>
-</figure>
-</div>
-</section>
-<section id="visual-editor" class="level3">
-<h3 class="anchored" data-anchor-id="visual-editor">Visual Editor</h3>
-<p>The RStudio Visual Editor is quite new and has features that improve your writing experience. Working in the Visual Editor feels a bit like working in a Google Doc.</p>
-<p>Here’s an example showing the same file in the original Source Editor with content in markdown format and in the Visual Editor with content that looks more like it will appear in a live site. You can switch freely between these modes.</p>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/rstudio-source-editor.png" class="img-fluid figure-img" alt="Screenshot of the RStudio IDE with red oval highlighting the Source button."></p>
-<p></p><figcaption class="figure-caption">RStudio IDE highlighting the Source Editor</figcaption><p></p>
-</figure>
+<section id="ptpn11-sequence-saturation-mutagenesis-sesam" class="level1">
+<h1>PTPN11 <strong><em>Se</em></strong>quence <strong><em>Sa</em></strong>turation <strong><em>M</em></strong>utagenesis (SeSaM)</h1>
+<section id="intro" class="level2">
+<h2 class="anchored" data-anchor-id="intro">Intro</h2>
+<p>PTPN11 gene is involved in a rare leukemia. The aim of the project is to investigate the effect of functional mutations in different aminoacids of this protein into developing the illness.</p>
+<p>The technique introduces mutations by adding <em>universal nucleoside analogs</em> in a pcr amplification process. For each copy, these nucleosides are inserted in one single random place across the sequence. Then an elongation process takes place where 0 to 2 extra analogs are introduced. Finally, these analog bases are substituted by random nucleotides. In these project in particular the targeted protein is <em>PTPN11</em> and has a sequence of <em>594 codons</em> / (593 aa + stop) and it’s equivalent CDS of <em>1782 bp</em>. Let’s have a look at the raw gene sequenece:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringi)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>wt_seq<span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="fu">readLines</span>(params<span class="sc">$</span>gene_file)[<span class="sc">-</span><span class="dv">1</span>],<span class="at">collapse=</span><span class="st">""</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">PTPN11 gene sequence:</span><span class="sc">\n\n</span><span class="st">"</span>,wt_seq)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+PTPN11 gene sequence:
+
+ ATGACATCGCGGAGATGGTTTCACCCAAATATCACTGGTGTGGAGGCAGAAAACCTACTGTTGACAAGAGGAGTTGATGGCAGTTTTTTGGCAAGGCCTAGTAAAAGTAACCCTGGAGACTTCACACTTTCCGTTAGAAGAAATGGAGCTGTCACCCACATCAAGATTCAGAACACTGGTGATTACTATGACCTGTATGGAGGGGAGAAATTTGCCACTTTGGCTGAGTTGGTCCAGTATTACATGGAACATCACGGGCAATTAAAAGAGAAGAATGGAGATGTCATTGAGCTTAAATATCCTCTGAACTGTGCAGATCCTACCTCTGAAAGGTGGTTTCATGGACATCTCTCTGGGAAAGAAGCAGAGAAATTATTAACTGAAAAAGGAAAACATGGTAGTTTTCTTGTACGAGAGAGCCAGAGCCACCCTGGAGATTTTGTTCTTTCTGTGCGCACTGGTGATGACAAAGGGGAGAGCAATGACGGCAAGTCTAAAGTGACCCATGTTATGATTCGCTGTCAGGAACTGAAATACGACGTTGGTGGAGGAGAACGGTTTGATTCTTTGACAGATCTTGTGGAACATTATAAGAAGAATCCTATGGTGGAAACATTGGGTACAGTACTACAACTCAAGCAGCCCCTTAACACGACTCGTATAAATGCTGCTGAAATAGAAAGCAGAGTTCGAGAACTAAGCAAATTAGCTGAGACCACAGATAAAGTCAAACAAGGCTTTTGGGAAGAATTTGAGACACTACAACAACAGGAGTGCAAACTTCTCTACAGCCGAAAAGAGGGTCAAAGGCAAGAAAACAAAAACAAAAATAGATATAAAAACATCCTGCCCTTTGATCATACCAGGGTTGTCCTACACGATGGTGATCCCAATGAGCCTGTTTCAGATTACATCAATGCAAATATCATCATGCCTGAATTTGAAACCAAGTGCAACAATTCAAAGCCCAAAAAGAGTTACATTGCCACACAAGGCTGCCTGCAAAACACGGTGAATGACTTTTGGCGGATGGTGTTCCAAGAAAACTCCCGAGTGATTGTCATGACAACGAAAGAAGTGGAGAGAGGAAAGAGTAAATGTGTCAAATACTGGCCTGATGAGTATGCTCTAAAAGAATATGGCGTCATGCGTGTTAGGAACGTCAAAGAAAGCGCCGCTCATGACTATACGCTAAGAGAACTTAAACTTTCAAAGGTTGGACAAGGGAATACGGAGAGAACGGTCTGGCAATACCACTTTCGGACCTGGCCGGACCACGGCGTGCCCAGCGACCCTGGGGGCGTGCTGGACTTCCTGGAGGAGGTGCACCATAAGCAGGAGAGCATCATGGATGCAGGGCCGGTCGTGGTGCACTGCAGTGCTGGAATTGGCCGGACAGGGACGTTCATTGTGATTGATATTCTTATTGACATCATCAGAGAGAAAGGTGTTGACTGCGATATTGACGTTCCCAAAACCATCCAGATGGTGCGGTCTCAGAGGTCAGGGATGGTCCAGACAGAAGCACAGTACCGATTTATCTATATGGCGGTCCAGCATTATATTGAAACACTACAGCGCAGGATTGAAGAAGAGCAGAAAAGCAAGAGGAAAGGGCACGAATATACAAATATTAAGTATTCTCTAGCGGACCAGACGAGTGGAGATCAGAGCCCTCTCCCGCCTTGTACTCCAACGCCACCCTGTGCAGAAATGAGAGAAGACAGTGCTAGAGTCTATGAAAACGTGGGCCTGATGCAACAGCAGAAAAGTTTCAGATGA</code></pre>
 </div>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/rstudio-visual-editor.png" class="img-fluid figure-img" alt="Screenshot of the RStudio IDE with red oval highlighting the Visual button."></p>
-<p></p><figcaption class="figure-caption">RStudio IDE highlighting the Visual Editor</figcaption><p></p>
-</figure>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>wt_counts<span class="ot">&lt;-</span> <span class="fu">data.table</span>(<span class="fu">t</span>(<span class="fu">stri_count_fixed</span>(wt_seq,<span class="fu">c</span>(<span class="st">"A"</span>,<span class="st">"C"</span>,<span class="st">"T"</span>,<span class="st">"G"</span>))<span class="sc">/</span><span class="fu">nchar</span>(wt_seq) <span class="sc">*</span> <span class="dv">100</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(wt_counts)<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"A"</span>,<span class="st">"C"</span>,<span class="st">"T"</span>,<span class="st">"G"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>wt_codons<span class="ot">&lt;-</span><span class="fu">as.character</span>(<span class="fu">stri_extract_all_regex</span>(wt_seq,<span class="st">'.{1,3}'</span>,<span class="at">simplify=</span>T)) <span class="co">#wt_codons &lt;- stri_sub(wt_seq,length=3,from=c(seq(from=1,to=nchar(wt_seq),by=3)))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>And the “wild type” protein sequence:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>rg<span class="ot">&lt;-</span><span class="fu">readRDS</span>(<span class="st">"../data-raw/rg.rds"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>wt_counts[,(<span class="fu">names</span>(<span class="fu">table</span>(wt_codons)))<span class="sc">:</span><span class="er">=</span> <span class="fu">as.list</span>(<span class="fu">table</span>(wt_codons) <span class="sc">/</span> <span class="fu">length</span>(wt_codons)<span class="sc">*</span><span class="dv">100</span>)]</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>ct<span class="ot">&lt;-</span><span class="fu">as.data.table</span>(rg,<span class="at">key =</span> <span class="st">"GeneticCode"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>wt_aa <span class="ot">&lt;-</span> ct[wt_codons,AminoAcids]</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">PTPN11 amino acid sequence:</span><span class="sc">\n\n</span><span class="st">"</span>,wt_aa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+PTPN11 amino acid sequence:
+
+ Met Thr Ser Arg Arg Trp Phe His Pro Asn Ile Thr Gly Val Glu Ala Glu Asn Leu Leu Leu Thr Arg Gly Val Asp Gly Ser Phe Leu Ala Arg Pro Ser Lys Ser Asn Pro Gly Asp Phe Thr Leu Ser Val Arg Arg Asn Gly Ala Val Thr His Ile Lys Ile Gln Asn Thr Gly Asp Tyr Tyr Asp Leu Tyr Gly Gly Glu Lys Phe Ala Thr Leu Ala Glu Leu Val Gln Tyr Tyr Met Glu His His Gly Gln Leu Lys Glu Lys Asn Gly Asp Val Ile Glu Leu Lys Tyr Pro Leu Asn Cys Ala Asp Pro Thr Ser Glu Arg Trp Phe His Gly His Leu Ser Gly Lys Glu Ala Glu Lys Leu Leu Thr Glu Lys Gly Lys His Gly Ser Phe Leu Val Arg Glu Ser Gln Ser His Pro Gly Asp Phe Val Leu Ser Val Arg Thr Gly Asp Asp Lys Gly Glu Ser Asn Asp Gly Lys Ser Lys Val Thr His Val Met Ile Arg Cys Gln Glu Leu Lys Tyr Asp Val Gly Gly Gly Glu Arg Phe Asp Ser Leu Thr Asp Leu Val Glu His Tyr Lys Lys Asn Pro Met Val Glu Thr Leu Gly Thr Val Leu Gln Leu Lys Gln Pro Leu Asn Thr Thr Arg Ile Asn Ala Ala Glu Ile Glu Ser Arg Val Arg Glu Leu Ser Lys Leu Ala Glu Thr Thr Asp Lys Val Lys Gln Gly Phe Trp Glu Glu Phe Glu Thr Leu Gln Gln Gln Glu Cys Lys Leu Leu Tyr Ser Arg Lys Glu Gly Gln Arg Gln Glu Asn Lys Asn Lys Asn Arg Tyr Lys Asn Ile Leu Pro Phe Asp His Thr Arg Val Val Leu His Asp Gly Asp Pro Asn Glu Pro Val Ser Asp Tyr Ile Asn Ala Asn Ile Ile Met Pro Glu Phe Glu Thr Lys Cys Asn Asn Ser Lys Pro Lys Lys Ser Tyr Ile Ala Thr Gln Gly Cys Leu Gln Asn Thr Val Asn Asp Phe Trp Arg Met Val Phe Gln Glu Asn Ser Arg Val Ile Val Met Thr Thr Lys Glu Val Glu Arg Gly Lys Ser Lys Cys Val Lys Tyr Trp Pro Asp Glu Tyr Ala Leu Lys Glu Tyr Gly Val Met Arg Val Arg Asn Val Lys Glu Ser Ala Ala His Asp Tyr Thr Leu Arg Glu Leu Lys Leu Ser Lys Val Gly Gln Gly Asn Thr Glu Arg Thr Val Trp Gln Tyr His Phe Arg Thr Trp Pro Asp His Gly Val Pro Ser Asp Pro Gly Gly Val Leu Asp Phe Leu Glu Glu Val His His Lys Gln Glu Ser Ile Met Asp Ala Gly Pro Val Val Val His Cys Ser Ala Gly Ile Gly Arg Thr Gly Thr Phe Ile Val Ile Asp Ile Leu Ile Asp Ile Ile Arg Glu Lys Gly Val Asp Cys Asp Ile Asp Val Pro Lys Thr Ile Gln Met Val Arg Ser Gln Arg Ser Gly Met Val Gln Thr Glu Ala Gln Tyr Arg Phe Ile Tyr Met Ala Val Gln His Tyr Ile Glu Thr Leu Gln Arg Arg Ile Glu Glu Glu Gln Lys Ser Lys Arg Lys Gly His Glu Tyr Thr Asn Ile Lys Tyr Ser Leu Ala Asp Gln Thr Ser Gly Asp Gln Ser Pro Leu Pro Pro Cys Thr Pro Thr Pro Pro Cys Ala Glu Met Arg Glu Asp Ser Ala Arg Val Tyr Glu Asn Val Gly Leu Met Gln Gln Gln Lys Ser Phe Arg Stop</code></pre>
 </div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>wt_counts[,(<span class="fu">names</span>(<span class="fu">table</span>(wt_aa)))<span class="sc">:</span><span class="er">=</span> <span class="fu">as.list</span>(<span class="fu">table</span>(wt_aa) <span class="sc">/</span> <span class="fu">length</span>(wt_aa)<span class="sc">*</span><span class="dv">100</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<p>Already have some content formatted in a Google Doc? You can copy-paste it into the Visual Editor and most formatting will be retained.</p>
-<p>The editing bar provides familiar point and click access to text formatting options like bulleted or numbered lists.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/rstudio-visual-edit-bar.png" class="img-fluid figure-img" alt="RStudio IDE Visual Editor editing bar is highlighted by a red rectangle"></p>
-<p></p><figcaption class="figure-caption">RStudio IDE highlighting the point and click editing bar</figcaption><p></p>
-</figure>
-</div>
-<section id="keyboard-shortcuts" class="level4">
-<h4 class="anchored" data-anchor-id="keyboard-shortcuts">Keyboard shortcuts</h4>
-<p>The Visual Editor also lets you use many keyboard shortcuts that might be familiar for adding boldface (command-b), italics (command-i), or headers. On a Mac, option-command-2 will make a level 2 header. Try it with option-command-1, or option-command-0 for normal text!</p>
-</section>
-<section id="insert-an-image-or-figure" class="level4">
-<h4 class="anchored" data-anchor-id="insert-an-image-or-figure">Insert an image or figure</h4>
-<p>To insert an image (called a figure in Quarto), click the image icon. This brings up a window in which we can select the image, set its alignment, give it a caption and alt text, hyperlink it, or edit other metadata.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/rstudio-insert-image.png" class="img-fluid figure-img" alt="Pop-up window appears when image icon is clicked"></p>
-<p></p><figcaption class="figure-caption">Insert image or figure using the Visual Editor</figcaption><p></p>
-</figure>
-</div>
-<p>Once an image is added, clicking on that image gives us editing options. We can resize it dynamically by clicking in the image and dragging a corner or side to resize. When an image is selected, its dimensions are displayed for editing. Clicking on the gray ellipsis to the right of the dimensions opens the pop-up window to access more metadata edits.</p>
-</section>
-<section id="insert-a-table" class="level4">
-<h4 class="anchored" data-anchor-id="insert-a-table">Insert a table</h4>
-<p>Similar to adding an image, to insert a table, we click the Table dropdown.</p>
-</section>
-</section>
-</section>
-<section id="quarto-render" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-render">Quarto render</h2>
-<p>In the Build tab in the top-right pane, click “Render Website”. This will build the .html files and preview your website. It’s equivalent to “knitting” in RMarkdown.</p>
-<p>Note that you can also click “Preview Website”. With “Render Website” in RStudio, Quarto is able to render and preview in one step.</p>
-<p>If you’d ever like to stop the preview, in the bottom-left, click on the Jobs tab and then the red Stop button.</p>
-<section id="make-a-small-change-and-render-it" class="level3">
-<h3 class="anchored" data-anchor-id="make-a-small-change-and-render-it">Make a small change and render it</h3>
-<p>Click on <code>index.md</code>. This will open this markdown file in a fourth pane; the editor pane. Make a small change, for example change to today’s date on Line 4. Then, save your file; there is a disc icon at the top of the file.</p>
-<p>Then, render this file: press “Render” which is to the right of the disc icon that saves the file. This will render only this single file, as opposed to rerendering the whole website like when we clicked “Render Website” in the top right pane. Checking <strong>Render on Save</strong> (between the disc icon and the Render button) is a great strategy for doing this in one step.</p>
-</section>
-</section>
-<section id="create-a-new-.rmd-page" class="level2">
-<h2 class="anchored" data-anchor-id="create-a-new-.rmd-page">Create a new <code>.Rmd</code> page</h2>
-<p>New &gt; RMarkdown document &gt; OK</p>
-<p>The starter RMarkdown document has some R code inside: it displays a summary of the cars dataset that is pre-loaded into R (<code>summary(cars)</code>) and plots the pressure data that is also pre-loaded (<code>plot(pressure)</code>).</p>
-<p>Save this document as <code>r-example.rmd</code>.</p>
-</section>
-<section id="update-_quarto.yml" class="level2">
-<h2 class="anchored" data-anchor-id="update-_quarto.yml">Update <code>_quarto.yml</code></h2>
-<p>Now we’ll add <code>r-example.rmd</code> to our <code>_quarto.yml</code> file; this is where we register all files to include in our site. Let’s add it after the section called “Quarto Workflows”.</p>
-<p>Open <code>_quarto.yml</code> by clicking on it from the file directory.</p>
-<p>Scroll down to review the current contents in the <code>sidebar:</code> section under <code>contents:</code>. It’s there we see all the file arrangement that we see in the previewed site.</p>
-<p>Add <code>- r-example.rmd</code> in its own line, making sure that your indentation aligns with the other pages.</p>
-<p>From the Build tab, clicking Preview Website will recreate your website!</p>
-</section>
-<section id="authoring-tips" class="level2">
-<h2 class="anchored" data-anchor-id="authoring-tips">Authoring tips</h2>
-<p>Checking “Render on Save” is really helpful when iterating quickly on a document.</p>
-<p>If the document is very code-heavy, consider using <a href="https://quarto.org/docs/projects/code-execution.html#freeze"><code>freeze</code></a> that will not run the code each time.</p>
-<p><a href="https://quarto.org/">Quarto.org</a> has details about authoring, including specific instructions about <a href="https://quarto.org/docs/get-started/authoring/rstudio.html">authoring in RStudio</a>.</p>
-</section>
-<section id="commit-and-push" class="level2">
-<h2 class="anchored" data-anchor-id="commit-and-push">Commit and push!</h2>
-<p>Committing and pushing will make the changes you see locally live on your website (using the <a href="../explore.html#setup-github-action">GitHub Action we set up earlier</a>).</p>
-</section>
-<section id="troubleshooting" class="level2">
-<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
-<p>If you have trouble rendering your website after for example changing the extenstion of a file from <code>.md</code> to <code>.qmd</code>, refreshing your RStudio often helps. Do this by clicking the project name at the upper right of the RStudio window (in this case, <code>quarto-website-tutorial</code>), and underneath the “close project” section, click the same name of your project: <code>quarto-website-tutorial</code>. This will relaunch your whole project afresh.</p>
+<p>So, it is quite difficult to get anything from those. Let’s take a look into its 3D structure:</p>
+    <div id="app-3B7O" class="molstar-app"></div>
+    <script type="text/javascript">
+    molstar.Viewer.create("app-3B7O", {"layoutShowControls":false,"viewportShowExpand":true,"layoutIsExpanded":false,"layoutShowLeftPanel":true,"emdbProvider":"rcsb","layoutShowLog":false,"pdbProvider":"rcsb","layoutShowSequence":false,"layoutShowRemoteState":false,"viewportShowAnimation":true,"viewportShowSelectionMode":false}).then(viewer => {
+    viewer.loadPdb("3B7O");    });
+    </script>
+    
+<p>We can also take a look in the <a href="https://alphafold.com/">AlphaFold Database</a> to compare the wild type structure to the mutants.</p>
+    <div id="app-Q96I26" class="molstar-app"></div>
+    <script type="text/javascript">
+    molstar.Viewer.create("app-Q96I26", {"layoutShowControls":false,"viewportShowExpand":true,"layoutIsExpanded":false,"layoutShowLeftPanel":true,"emdbProvider":"rcsb","layoutShowLog":false,"pdbProvider":"rcsb","layoutShowSequence":false,"layoutShowRemoteState":false,"viewportShowAnimation":true,"viewportShowSelectionMode":false}).then(viewer => {
+    viewer.loadAlphaFoldDb(afdb="Q96I26")    });
+    </script>
+    
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
