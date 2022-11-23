@@ -20,7 +20,7 @@ jobs:
           # version: 0.9.600
       - name: 'Install quarto extenisons' 
         run: |
-          "Y\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nY" | quarto install extension jmbuhr/quarto-molstar 
+          /bin/bash -c '"Y\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nY" | quarto install extension jmbuhr/quarto-molstar '
       
       ## add software dependencies here
       # r packages:
