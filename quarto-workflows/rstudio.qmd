@@ -42,8 +42,9 @@ wt_codons<-as.character(stri_extract_all_regex(wt_seq,'.{1,3}',simplify=T)) #wt_
 And the "wild type" protein sequence:
 
 ```{r}
+rg<-readRDS("../data-raw/rg.rds")
 wt_counts[,(names(table(wt_codons))):= as.list(table(wt_codons) / length(wt_codons)*100)]
-ct<-as.data.table(RGenetics::geneticCodeTable(),key = "GeneticCode")
+ct<-as.data.table(rg,key = "GeneticCode")
 wt_aa <- ct[wt_codons,AminoAcids]
 cat("\nPTPN11 amino acid sequence:\n\n",wt_aa)
 wt_counts[,(names(table(wt_aa))):= as.list(table(wt_aa) / length(wt_aa)*100)]
