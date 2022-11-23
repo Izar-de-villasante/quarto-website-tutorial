@@ -33,7 +33,12 @@ jobs:
             any::rmarkdown
             any::terra
       - uses: r-lib/actions/setup-renv@v2    
-          
+      
+      - name: 'Install quarto extenisons' 
+        run: |
+        
+              quarto install extension jmbuhr/quarto-molstar
+        
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
