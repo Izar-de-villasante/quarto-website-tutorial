@@ -631,7 +631,7 @@
     },
     "vctrs": {
       "Package": "vctrs",
-      "Version": "0.5.1",
+      "Version": "0.6.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "970324f6572b4fd81db507b5d4062cb0",
